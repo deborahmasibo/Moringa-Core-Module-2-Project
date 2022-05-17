@@ -49,7 +49,6 @@ def PageSpecifications(sBox):
         st.markdown("<h1 style='text-align: center; color: black;'> Brain Tumour Detection and Classification </h1>", unsafe_allow_html=True)
         # Adding spaces between the header and image
         st.write()
-        st.write()
         #st.title("Cryptocurrency Performance Index")
 
         # Loading the homepage image
