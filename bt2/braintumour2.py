@@ -187,8 +187,8 @@ def PageSpecifications(sBox):
         if analysisRad == 'Tumour Types':
             col1, col2= st.columns([5,5])
             with col1:
-            image_glioma = Image.open("./bt2/images/glioma.jpeg")
-            st.image(image_glioma, caption="Glioma tumour", width = 200)
+                image_glioma = Image.open("./bt2/images/glioma.jpeg")
+                st.image(image_glioma, caption="Glioma tumour", width = 200)
 
             with col2:
                 # Loading page image
