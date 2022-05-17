@@ -6,7 +6,7 @@ from random import random
 import time
 # from tkinter import N
 from turtle import color
-import _tkinter
+# import _tkinter
 import seaborn as sns
 import cv2
 import tensorflow as tf
