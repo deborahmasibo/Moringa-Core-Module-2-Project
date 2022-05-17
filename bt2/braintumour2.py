@@ -187,7 +187,7 @@ def PageSpecifications(sBox):
         # Creating the analysis sections
         analysisRad = st.sidebar.selectbox("Topics", ["Tumour Types", "Tumour Frequency Plot"]) 
         if analysisRad == 'Tumour Types':
-            col1, col2, col3, col4= st.columns([3,3,3,3])
+            col1, col2, col3, col4, col5= st.columns([3,3,1,3,3])
             with col1:
                 image_none = Image.open("./bt2/images/none.jpeg")
                 st.image(image_none, caption="No tumour", width = 200)
@@ -196,11 +196,14 @@ def PageSpecifications(sBox):
                 # Loading page image
                 st.write('''
                 Image of a healthy brain.''')
-            with col3:
+                
+            with col3:    
+                st.write()
+            with col4:
                 image_glioma = Image.open("./bt2/images/glioma.jpeg")
                 st.image(image_glioma, caption="Glioma tumour", width = 200)
 
-            with col4:
+            with col5:
                 # Loading page image
                 st.write('''
                 According to (Hopkins medicine, 2022), glioma is a common type of tumor originating in the brain. 
@@ -209,9 +212,10 @@ def PageSpecifications(sBox):
                 are called intra-axial brain tumors because they grow within the substance of the brain and often mix
                 with normal brain tissue.''')
             # Second row
-            st.write()
-            st.write()
-            col1, col2, col3, col4= st.columns([3,3,3,3])
+            st.write('\n')
+            st.write('\n')
+            #st.write()
+            col1, col2, col3, col4, col5= st.columns([3,3,1,3,3])
             with col1:
                 image_meningioma = Image.open("./bt2/images/meningioma.jpeg")
                 st.image(image_meningioma, caption="Meningioma tumour", width = 200)
@@ -223,12 +227,13 @@ def PageSpecifications(sBox):
                 Although not technically a brain tumor, it is included in this category because it may compress or squeeze the
                 adjacent brain, nerves and vessels. Meningioma is the most common type of tumor that forms in the head. Most 
                 meningiomas grow very slowly, often over many years without causing symptoms (mayoclinic, 2022).''')
-                
             with col3:
+                st.write()
+            with col4:
                 image_pituitary = Image.open("./bt2/images/pituitary.jpeg")
                 st.image(image_glioma, caption="Pituitary tumour", width = 200)
 
-            with col4:
+            with col5:
                 # Loading page image
                 st.write('''
                 A pituitary tumor is an abnormal growth in the pituitary gland. The pituitary is a small gland at the base of the brain.
