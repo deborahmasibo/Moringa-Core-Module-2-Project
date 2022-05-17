@@ -59,7 +59,7 @@ def PageSpecifications(sBox):
             st.write('')
 
         with col2:
-            imagemain = Image.open("./images/Brain_scan.png")
+            imagemain = Image.open("./bt2/images/Brain_scan.png")
             st.image(imagemain, caption="MRI Scan", width = 500)
             #st.markdown("##")
 
