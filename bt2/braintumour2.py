@@ -68,7 +68,7 @@ def PageSpecifications(sBox):
 
         # Introduction
         st.write("")
-        st.write("")
+        #st.write("")
         st.markdown("<h3 style='text-align: center; color: black;'> Introduction </h3>", unsafe_allow_html=True)
         st.write("""Glioma, meningiomas and pituitary tumours are the most common types of brain tumours. This project seeks to 
         classify detected brain tumours from MRI scans inot one of the aforementioned categories.""")
