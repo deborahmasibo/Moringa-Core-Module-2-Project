@@ -53,7 +53,7 @@ def PageSpecifications(sBox):
         #st.title("Cryptocurrency Performance Index")
 
         # Loading the homepage image
-        col1, col2, col3 = st.columns([3.1,5,1])
+        col1, col2, col3 = st.columns([2.9,5,1])
 
         with col1:
             st.write('')
@@ -89,7 +89,7 @@ def PageSpecifications(sBox):
 
         with col2:
             # Loading page image
-            imageOverview = Image.open(r"C:\\Users\\HP\\OneDrive\\Desktop\\Moringa\\brain tumour\\bt\\images\\overview.png")
+            imageOverview = Image.open("./bt2/images/overview.png")
             st.image(imageOverview, caption="Benign Vs Malignant", width= 400)
          
 
