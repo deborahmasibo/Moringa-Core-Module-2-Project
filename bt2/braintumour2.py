@@ -170,8 +170,8 @@ def PageSpecifications(sBox):
                 result = f"{pred} Detected" 
             
             return result
-    if __name__ == "__main__":
-        main()
+        if __name__ == "__main__":
+            main()
 
 
     
