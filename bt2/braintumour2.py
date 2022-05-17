@@ -185,12 +185,20 @@ def PageSpecifications(sBox):
         # Creating the analysis sections
         analysisRad = st.sidebar.selectbox("Topics", ["Tumour Types", "Tumour Frequency Plot"]) 
         if analysisRad == 'Tumour Types':
-            col1, col2= st.columns([5,5])
+            col1, col2, col3, col4= st.columns([3,3,3,3])
             with col1:
-                image_glioma = Image.open("./bt2/images/glioma.jpeg")
-                st.image(image_glioma, caption="Glioma tumour", width = 200)
+                image_glioma = Image.open("./bt2/images/none.jpeg")
+                st.image(image_glioma, caption="No tumour", width = 200)
 
             with col2:
+                # Loading page image
+                st.write('''
+                Image of a healthy brain.''')
+            with col3:
+            image_glioma = Image.open("./bt2/images/glioma.jpeg")
+            st.image(image_glioma, caption="Glioma tumour", width = 200)
+
+            with col4:
                 # Loading page image
                 st.write('''
                 According to (Hopkins medicine, 2022), glioma is a common type of tumor originating in the brain. 
@@ -198,6 +206,7 @@ def PageSpecifications(sBox):
                 and support neurons in the brain, including astrocytes, oligodendrocytes and ependymal cells. Gliomas
                 are called intra-axial brain tumors because they grow within the substance of the brain and often mix
                 with normal brain tissue.''')
+             
                 
 
         
