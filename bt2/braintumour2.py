@@ -53,7 +53,7 @@ def PageSpecifications(sBox):
         #st.title("Cryptocurrency Performance Index")
 
         # Loading the homepage image
-        col1, col2, col3 = st.columns([1.9,5,1])
+        col1, col2, col3 = st.columns([1.3,5,1])
 
         with col1:
             st.write('')
