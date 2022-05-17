@@ -3,8 +3,6 @@ Analysis of Top Cryptocurrencies
 
 """
 from random import random
-from turtle import color
-import _tkinter
 import time
 import seaborn as sns
 from matplotlib import pyplot as plt
