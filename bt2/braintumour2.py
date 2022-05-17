@@ -182,8 +182,8 @@ def PageSpecifications(sBox):
     elif sBox == "Analysis":
         # Setting the page header
         st.markdown("<h2 style='text-align: center; color: black;'> Analysis </h2>", unsafe_allow_html=True)
-        st.write()
-        st.write()
+        st.write('\n')
+        st.write('\n')
         # Creating the analysis sections
         analysisRad = st.sidebar.selectbox("Topics", ["Tumour Types", "Tumour Frequency Plot"]) 
         if analysisRad == 'Tumour Types':
@@ -214,7 +214,7 @@ def PageSpecifications(sBox):
             # Second row
             st.write('\n')
             st.write('\n')
-            #st.write()
+            st.write('\n')
             col1, col2, col3, col4, col5= st.columns([3,3,1,3,3])
             with col1:
                 image_meningioma = Image.open("./bt2/images/meningioma.jpeg")
