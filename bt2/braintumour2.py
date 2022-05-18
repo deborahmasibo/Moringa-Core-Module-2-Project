@@ -73,7 +73,7 @@ def PageSpecifications():
             # if class_btn:
             with st.spinner('Model working....'):
                 with col1:  
-                    st.image(opencv_image, channels = 'RGB', width= 500, caption='Uploaded Image')
+                    st.image(opencv_image, channels = 'RGB', width= 300, caption='Uploaded Image')
                     predictions, message = predict(image)
 
                 with col2:
