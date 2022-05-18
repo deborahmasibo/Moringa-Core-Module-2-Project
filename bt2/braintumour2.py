@@ -74,7 +74,7 @@ def PageSpecifications(sBox):
             # classify detected brain tumours from MRI scans into one of the aforementioned categories.""")
         with col2:
             imagemain = Image.open("./bt2/images/brain.jpg")
-            st.image(imagemain, width = 800)
+            st.image(imagemain, width = 700)
 
         with col3:
             st.write(' ')
