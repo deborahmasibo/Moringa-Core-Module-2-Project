@@ -54,7 +54,7 @@ def PageSpecifications(sBox):
             <style>
             .main {
                 # background-color: #6b8829;
-                background-image: url('https://c4.wallpaperflare.com/wallpaper/150/128/926/minimalism-people-brain-x-rays-wallpaper-preview.jpg');
+                background-image: url('https://www.ansto.gov.au/sites/default/files/styles/hero_image_2z/public/hero-images/Brain-Banner-2.jpg?h=f3678b68&itok=MrcCVO3M');
                 }
                 </style>
                 """,
