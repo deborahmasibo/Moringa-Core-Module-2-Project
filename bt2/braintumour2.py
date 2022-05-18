@@ -231,7 +231,7 @@ def PageSpecifications(sBox):
                 st.write()
             with col4:
                 image_pituitary = Image.open("./bt2/images/pituitary.jpeg")
-                st.image(image_glioma, caption="Pituitary tumour", width = 200)
+                st.image(image_pituitary, caption="Pituitary tumour", width = 200)
 
             with col5:
                 # Loading page image
