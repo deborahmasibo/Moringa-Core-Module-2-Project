@@ -54,7 +54,7 @@ def PageSpecifications(sBox):
             <style>
             .main {
                 # background-color: #6b8829;
-                background-image: url('https://www.ansto.gov.au/sites/default/files/styles/hero_image_2z/public/hero-images/Brain-Banner-2.jpg?h=f3678b68&itok=MrcCVO3M');
+                background-image: url('https://www.itij.com/sites/default/files/styles/full_size_view/public/2021-08/hospital-modern.jpg?h=f8702894&itok=BtaZFLqF');
                 }
                 </style>
                 """,
