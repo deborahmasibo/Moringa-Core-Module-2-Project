@@ -1,5 +1,5 @@
 """
-Analysis of Top Cryptocurrencies
+Brain Tumour Classification
 
 """
 from random import random
@@ -18,8 +18,7 @@ import plotly.express as px
 import plotly.graph_objects as go
 from PIL import Image
 from urllib.request import urlopen
-# from live import LivePrices
-# rom analysis import ReturnTable, PlottingFunction
+
 
 #---------------------------------------------------------------------------------------------------------------#
 #                                                   PAGE SETTINGS                                               #
