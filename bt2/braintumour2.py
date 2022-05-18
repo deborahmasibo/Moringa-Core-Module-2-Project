@@ -54,7 +54,7 @@ def PageSpecifications(sBox):
             <style>
             .main {
                 # background-color: #6b8829;
-                background-image: url('https://images.app.goo.gl/XYghr9RmRrCdLULv8);
+                background-image: url('https://www.pace.edu/sites/default/files/styles/16_9_1600x900/public/2022-03/ihsrc-interior-hero_0.jpg?h=993b43e0&itok=pDjcl_e7');
                 }
                 </style>
                 """,
@@ -68,7 +68,7 @@ def PageSpecifications(sBox):
 
         with col2:
             imagemain = Image.open("./bt2/images/Brain_scan.png")
-            st.image(imagemain, caption="MRI Scan", width = 500)
+            # st.image(imagemain, caption="MRI Scan", width = 500)
             #st.markdown("##")
 
         with col3:
