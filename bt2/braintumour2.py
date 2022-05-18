@@ -54,7 +54,7 @@ def PageSpecifications(sBox):
             <style>
             .main {
                 # background-color: #6b8829;
-                background-image: url('https://www.pace.edu/sites/default/files/styles/16_9_1600x900/public/2022-03/ihsrc-interior-hero_0.jpg?h=993b43e0&itok=pDjcl_e7');
+                background-image: url('https://c4.wallpaperflare.com/wallpaper/150/128/926/minimalism-people-brain-x-rays-wallpaper-preview.jpg');
                 }
                 </style>
                 """,
