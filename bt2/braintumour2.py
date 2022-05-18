@@ -54,7 +54,7 @@ def PageSpecifications(sBox):
             <style>
             .main {
                 # background-color: #6b8829;
-                background-image: url('https://thumbs.dreamstime.com/b/tomograph-hospital-health-oncology-radiology-ct-scanner-room-doctor-ultrasonography-131692976.jpg');
+                background-image: url('https://assets.technologynetworks.com/production/dynamic/images/content/342717/nanoparticle-crosses-bloodbrain-barrier-to-deliver-drugs-directly-to-brain-tumors-in-mice-342717-1280x720.jpg?cb=10974813');
                 }
                 </style>
                 """,
