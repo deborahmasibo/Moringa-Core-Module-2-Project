@@ -34,7 +34,7 @@ st.markdown("##")
 #---------------------------------------------------------------------------------------------------------------#
 
 # Sidebar population
-sBox = st.sidebar.selectbox("Menu", ["Home","Overview", "Analysis", "Detection","Recommendation", "Conclusion", "The Team"])
+sBox = st.sidebar.selectbox("Menu", ["Home", "Detection","The Team"])
 
 
 #----------------------------------------- Sidebar options configuration ----------------------------------------
@@ -71,47 +71,6 @@ def PageSpecifications(sBox):
         st.markdown("<h3 style='text-align: center; color: black;'> Introduction </h3>", unsafe_allow_html=True)
         st.write("""Gliomas, meningiomas and pituitary tumours are the most common types of brain tumours. This project seeks to 
         classify detected brain tumours from MRI scans into one of the aforementioned categories.""")
-
-           
-    
-    # -------------------------------------------------- OVERVIEW PAGE ---------------------------------------------------------------
-    elif sBox == "Overview":
-        # Setting the page header
-        st.markdown("<h2 style='text-align: center; color: black;'> Overview </h2>", unsafe_allow_html=True)
-        # Using columns to center image
-        col1, col2, col3 = st.columns([3,6,1])
-
-        with col1:
-            # Column used to pad the image
-            st.write("")
-
-        with col2:
-            # Loading page image
-            imageOverview = Image.open("./bt2/images/overview.png")
-            st.image(imageOverview, caption="Benign Vs Malignant", width= 400)
-         
-
-        with col3:
-            # Column used to pad the image
-            st.write("")
-        
-        # Creating space between the image and text body
-        st.write("")
-        st.write("")
-
-        # Business overview
-        # Paragraph
-        st.write( """
-        Brain tumor is the growth of abnormal cells in the tissues of the brain. Brain tumors can be benign (non cancerous) or malignant (cancerous cells).
-        The most common type of primary tumor is the glioma tumor. About 33\% of all brain tumors are gliomas.
-         The tumor originates in the glial cells that surround and support neurons in the brain.
-          Meningiomas are also common, and form 30\% of all brain tumors.
-           The tumor arises from the meninges, therefore, technically, it is not a brain tumor but is included in this category as it 
-           compresses the adjacent brain, nerves and blood vessels.
-            According to the, a majority of the tumors are benign.
-             The final example of a primary tumor is a pituitary tumor. They are abnormal growths that develop in the pituitary gland. The tumor can
-              cause over or underproduction of hormones that regulate important functions of the body. Most pituitary tumors are benign and do not 
-              spread to other parts of the body.""")
 
         
     # ---------------------------------------------------- DETECTION PAGE------------------------------------------------------------
@@ -165,103 +124,10 @@ def PageSpecifications(sBox):
             return result
         if __name__ == "__main__":
             main()
-
-
-    
-
-    # ---------------------------------------------------- ANALYSIS PAGE---------------------------------------------------------------
-    
-
-    # Analysis page
-    elif sBox == "Analysis":
-        # Setting the page header
-        st.markdown("<h2 style='text-align: center; color: black;'> Analysis </h2>", unsafe_allow_html=True)
-        st.write('\n')
-        st.write('\n')
-        # Creating the analysis sections
-        analysisRad = st.sidebar.selectbox("Topics", ["Tumour Types", "Tumour Frequency Plot"]) 
-        if analysisRad == 'Tumour Types':
-            col1, col2, col3, col4, col5= st.columns([3,3,1,3,3])
-            with col1:
-                image_none = Image.open("./bt2/images/none.jpeg")
-                st.image(image_none, caption="No tumour", width = 200)
-
-            with col2:
-                # Loading page image
-                st.write('''
-                Image of a healthy brain.''')
-                
-            with col3:    
-                st.write()
-            with col4:
-                image_glioma = Image.open("./bt2/images/glioma.jpeg")
-                st.image(image_glioma, caption="Glioma tumour", width = 200)
-
-            with col5:
-                # Loading page image
-                st.write('''
-                According to (Hopkins medicine, 2022), glioma is a common type of tumor originating in the brain. 
-                About 33 \% of all brain tumors are gliomas, which originate in the glial cells that surround 
-                and support neurons in the brain, including astrocytes, oligodendrocytes and ependymal cells. Gliomas
-                are called intra-axial brain tumors because they grow within the substance of the brain and often mix
-                with normal brain tissue.''')
-            # Second row
-            st.write('\n')
-            st.write('\n')
-            st.write('\n')
-            col1, col2, col3, col4, col5= st.columns([3,3,1,3,3])
-            with col1:
-                image_meningioma = Image.open("./bt2/images/meningioma.jpeg")
-                st.image(image_meningioma, caption="Meningioma tumour", width = 200)
-
-            with col2:
-                # Loading page image
-                st.write('''
-                A meningioma is a tumor that arises from the meninges, the membranes that surround the brain and spinal cord.
-                Although not technically a brain tumor, it is included in this category because it may compress or squeeze the
-                adjacent brain, nerves and vessels. Meningioma is the most common type of tumor that forms in the head. Most 
-                meningiomas grow very slowly, often over many years without causing symptoms (mayoclinic, 2022).''')
-            with col3:
-                st.write()
-            with col4:
-                image_pituitary = Image.open("./bt2/images/pituitary.jpeg")
-                st.image(image_pituitary, caption="Pituitary tumour", width = 200)
-
-            with col5:
-                # Loading page image
-                st.write('''
-                A pituitary tumor is an abnormal growth in the pituitary gland. The pituitary is a small gland at the base of the brain.
-                It regulates the body's balance of many hormones. Most pituitary tumors are noncancerous (benign). Up to 10\% to 20\% of
-                people have pituitary tumors. Many of these tumors do not cause symptoms and are never diagnosed during the person's 
-                lifetime (medlineplus, 2021).''')
+  
              
                 
 
-        
-    # ---------------------------------------------------- RECOMMENDATION PAGE------------------------------------------------------------
-
-    elif sBox == "Recommendation":
-        # setting header
-        st.subheader("Recommendation")
-        st.write('''The real-world problems require proper addressing in the domain of medical image analysis that has been external to the domain
-        of computer vision. The computational complexity in handling MRI image modalities at a single instance is the major challenge in imaging and
-        pre-processing techniques. During MRI scans for diagnosis correct tuning of parameters and motion applied to images, are areas that can be
-        explored in the future. The time taken for processing and segmenting is considerably high which makes it difficult to process in real-time situations.
-        The classification using transfer learning while proven effective and takes fewer resources to train it has some bias because of the datasets that are
-        used to pre-train the models. This should be addressed in future works to make the system more efficient. The current methods that deal with the noise
-        in the MRI images are also responsible for reducing the features in the MRI images. Therefore models with better Noise removal techniques that do not
-        flatten the images can further increase the model’s accuracy. Techniques like semi-supervised learning can be used to augment the size of the dataset.''')
-
-    # ------------------------------------------------------ CONCLUSION PAGE---------------------------------------------------------------
-
-    elif sBox == "Conclusion":
-        # setting header
-        st.subheader("Conclusion")
-        st.write('''
-        The model successfully trains with accuracy with an accuracy of 96\%. In comparison with the other recently published works in which the
-        models are trained from the scratch, our model was built using transfer learning as a base model. This model can be used for preliminary
-        analysis for brain tumor detection before it can be sent to the experts. The model can be furthermore trained or additional data can be
-        used to train to increase the accuracy as it is not close to over fitting.''')
 
     # --------------------------------------------------------TEAM MEMBERS ---------------------------------------------------------------
     elif sBox == "The Team":
