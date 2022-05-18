@@ -28,6 +28,16 @@ from urllib.request import urlopen
 st.set_page_config(page_title = "Brain Tumour Detection and Classification", page_icon = 
 ":hospital:", layout="wide")
 st.markdown("##")
+st.markdown(
+            """
+            <style>
+            .main {
+                background-color: #6b8829;
+                background-image: url('https://assets.technologynetworks.com/production/dynamic/images/content/342717/nanoparticle-crosses-bloodbrain-barrier-to-deliver-drugs-directly-to-brain-tumors-in-mice-342717-1280x720.jpg?cb=10974813');
+                }
+                </style>
+                """,
+                unsafe_allow_html=True)
 
 #---------------------------------------------------------------------------------------------------------------#
 #                                                 SIDEBAR SETTINS                                               #
