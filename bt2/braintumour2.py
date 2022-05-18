@@ -54,7 +54,7 @@ def PageSpecifications(sBox):
             <style>
             .main {
                 # background-color: #6b8829;
-                background-image: url('https://tvnz-1-news-prod.cdn.arcpublishing.com/resizer/IOqzaLAB9N_-aE0WUXGuDBw8l1E=/800x450/filters:format(jpg):quality(70):focal(-5x-5:5x5)/cloudfront-ap-southeast-2.images.arcpublishing.com/tvnz/Z3FM4R6ZNNF2TK6GRMWWGJT63A.jpg');
+                background-image: url('https://thumbs.dreamstime.com/b/tomograph-hospital-health-oncology-radiology-ct-scanner-room-doctor-ultrasonography-131692976.jpg');
                 }
                 </style>
                 """,
