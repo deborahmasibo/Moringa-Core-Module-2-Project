@@ -85,16 +85,19 @@ def PageSpecifications(sBox):
                 file_bytes = np.asarray(bytearray(file_uploaded.read()), dtype=np.uint8)
                 opencv_image = cv2.imdecode(file_bytes, 1)
                 opencv_image = cv2.cvtColor(opencv_image, cv2.COLOR_BGR2RGB) 
-                st.image(opencv_image, channels = 'RGB', width= 300, caption='Uploaded Image')  
-                image = Image.open(file_uploaded)
-                # st.image(image, caption='Uploaded Image', use_column_width=True, width = 200)
+                st.image(opencv_image, channels = 'RGB', width= 200, caption='Uploaded Image') 
+                col1, col2 = st.columns([5, 5])
+                with col1:
+                    image = Image.open(file_uploaded)
+                    # st.image(image, caption='Uploaded Image', use_column_width=True, width = 200)
+                with col2:
                 class_btn = st.button("Generate Prediction")
-                if class_btn:                    
-                    with st.spinner('Model working....'):
-                            predictions = predict(image)
-                            time.sleep(1)
-                            st.success('Classified')
-                            st.markdown("<h5 style='text-align: left; color: black;'> {} </h5>".format(predictions), unsafe_allow_html=True)
+                    if class_btn:                    
+                        with st.spinner('Model working....'):
+                                predictions = predict(image)
+                                time.sleep(1)
+                                st.success('Classified')
+                                st.markdown("<h5 style='text-align: left; color: black;'> {} </h5>".format(predictions), unsafe_allow_html=True)
                             
 
         def predict(image):
