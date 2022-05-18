@@ -268,7 +268,7 @@ def PageSpecifications(sBox):
         # Team Members and Roles
         st.markdown("<h4 style='text-align: left; color: black;'> Team Members </h4>", unsafe_allow_html=True)
         st.write('\n')
-        st.write('Welcome to the Team Above the Norm. The team comprises of the following members')
+        st.write('Welcome to the Team Above the Norm. The team comprises of the following members:')
         st.write('1. Esther Ogutu\n2. Deborah Masibo\n3. Peter Otieno\n4. Faith Cherotich\n5. Vivian Bwana\n6. Christopher Toromo')
     
 
