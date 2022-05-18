@@ -32,7 +32,7 @@ st.markdown(
             """
             <style>
             .main {
-                background-color: #0590d0;
+                background-color: #8cd8fb;
                 # background-image: url('https://assets.technologynetworks.com/production/dynamic/images/content/342717/nanoparticle-crosses-bloodbrain-barrier-to-deliver-drugs-directly-to-brain-tumors-in-mice-342717-1280x720.jpg?cb=10974813');
                 }
                 </style>
