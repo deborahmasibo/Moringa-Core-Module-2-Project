@@ -66,11 +66,11 @@ def PageSpecifications(sBox):
         with col1:
             st.write('')
             # Introduction
-            st.write("")
-            #st.write("")
-            st.markdown("<h3 style='text-align: center; color: black;'> Introduction </h3>", unsafe_allow_html=True)
-            st.write("""Gliomas, meningiomas and pituitary tumours are the most common types of brain tumours. This project seeks to 
-            classify detected brain tumours from MRI scans into one of the aforementioned categories.""")
+            # st.write("")
+            # st.write("")
+            # st.markdown("<h3 style='text-align: center; color: black;'> Introduction </h3>", unsafe_allow_html=True)
+            # st.write("""Gliomas, meningiomas and pituitary tumours are the most common types of brain tumours. This project seeks to 
+            # classify detected brain tumours from MRI scans into one of the aforementioned categories.""")
         with col2:
             imagemain = Image.open("./bt2/images/Brain_scan.png")
             # st.image(imagemain, caption="MRI Scan", width = 500)
