@@ -91,7 +91,7 @@ def PageSpecifications(sBox):
                     image = Image.open(file_uploaded)
                     # st.image(image, caption='Uploaded Image', use_column_width=True, width = 200)
                 with col2:
-                class_btn = st.button("Generate Prediction")
+                    class_btn = st.button("Generate Prediction")
                     if class_btn:                    
                         with st.spinner('Model working....'):
                                 predictions = predict(image)
