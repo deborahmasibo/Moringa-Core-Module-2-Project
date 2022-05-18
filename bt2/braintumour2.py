@@ -49,18 +49,20 @@ def PageSpecifications(sBox):
         # Adding spaces between the header and image
         st.write()
         
-        st.markdown(
-            """
-            <style>
-            .main {
+        # st.markdown(
+            # """
+            # <style>
+            # .main {
                 # background-color: #6b8829;
-                background-image: url('https://assets.technologynetworks.com/production/dynamic/images/content/342717/nanoparticle-crosses-bloodbrain-barrier-to-deliver-drugs-directly-to-brain-tumors-in-mice-342717-1280x720.jpg?cb=10974813');
-                }
-                </style>
-                """,
-                unsafe_allow_html=True)
+              #  background-image: url('https://assets.technologynetworks.com/production/dynamic/images/content/342717/nanoparticle-crosses-bloodbrain-barrier-to-deliver-drugs-directly-to-brain-tumors-in-mice-342717-1280x720.jpg?cb=10974813');
+               # }
+               # </style>
+                #""",
+                #unsafe_allow_html=True)
 
         # Loading the homepage image
+        imagemain = Image.open("./bt2/images/brain.jpg")
+            #st.image(imagemain, caption="MRI Scan")
         col1, col2, col3 = st.columns([1.6,5,1])
 
         with col1:
@@ -73,7 +75,7 @@ def PageSpecifications(sBox):
             # classify detected brain tumours from MRI scans into one of the aforementioned categories.""")
         with col2:
             imagemain = Image.open("./bt2/images/Brain_scan.png")
-            # st.image(imagemain, caption="MRI Scan", width = 500)
+            #st.image(imagemain, caption="MRI Scan", width = 500)
             #st.markdown("##")
 
         with col3:
