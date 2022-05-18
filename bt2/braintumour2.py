@@ -84,15 +84,15 @@ def PageSpecifications(sBox):
             if file_uploaded is not None: 
                 file_bytes = np.asarray(bytearray(file_uploaded.read()), dtype=np.uint8)
                 opencv_image = cv2.imdecode(file_bytes, 1)
-                opencv_image = cv2.cvtColor(opencv_image, cv2.COLOR_BGR2RGB) 
-                st.image(opencv_image, channels = 'RGB', width= 200, caption='Uploaded Image') 
+                opencv_image = cv2.cvtColor(opencv_image, cv2.COLOR_BGR2RGB)  
                 image = Image.open(file_uploaded)
                 col1, col2 = st.columns([5, 5])
                 # st.image(image, caption='Uploaded Image', use_column_width=True, width = 200)
                 # class_btn = st.button("Generate Prediction")
                 # if class_btn:
                 with st.spinner('Model working....'):
-                    with col1:                    
+                    with col1:  
+                        st.image(opencv_image, channels = 'RGB', width= 200, caption='Uploaded Image')
                         predictions = predict(image)
                     with col2:
                         time.sleep(1)
