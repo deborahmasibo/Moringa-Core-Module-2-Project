@@ -62,7 +62,7 @@ def PageSpecifications(sBox):
 
         # Loading the homepage image
         imagemain = Image.open("./bt2/images/brain.jpg")
-            #st.image(imagemain, caption="MRI Scan")
+        st.image(imagemain, caption="MRI Scan")
         col1, col2, col3 = st.columns([1.6,5,1])
 
         with col1:
