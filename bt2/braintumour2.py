@@ -35,7 +35,7 @@ st.markdown("##")
 
 # Sidebar population
 sBox = st.sidebar.selectbox("Menu", ["Home","Overview", "Analysis", "Detection","Recommendation", "Conclusion", "The Team"])
-#st.sidebar.selectbox("Topics", ["Popularity", "Trends","Stability", "Growth", "Risk"])
+
 
 #----------------------------------------- Sidebar options configuration ----------------------------------------
 
@@ -48,10 +48,10 @@ def PageSpecifications(sBox):
         st.markdown("<h1 style='text-align: center; color: black;'> Brain Tumour Detection and Classification </h1>", unsafe_allow_html=True)
         # Adding spaces between the header and image
         st.write()
-        #st.title("Cryptocurrency Performance Index")
+        
 
         # Loading the homepage image
-        col1, col2, col3 = st.columns([1.5,5,1])
+        col1, col2, col3 = st.columns([1.6,5,1])
 
         with col1:
             st.write('')
@@ -100,14 +100,9 @@ def PageSpecifications(sBox):
         st.write("")
 
         # Business overview
-        # Paragraph one
-
-        st.write("""Brain tumor is the growth of abnormal cells in the tissues of the brain.
-         Brain tumors can be benign (non cancerous) or malignant (cancerous cells).""")
-
-
-        # Paragraph two
+        # Paragraph
         st.write( """
+        Brain tumor is the growth of abnormal cells in the tissues of the brain. Brain tumors can be benign (non cancerous) or malignant (cancerous cells).
         The most common type of primary tumor is the glioma tumor. About 33\% of all brain tumors are gliomas.
          The tumor originates in the glial cells that surround and support neurons in the brain.
           Meningiomas are also common, and form 30\% of all brain tumors.
@@ -118,7 +113,7 @@ def PageSpecifications(sBox):
               cause over or underproduction of hormones that regulate important functions of the body. Most pituitary tumors are benign and do not 
               spread to other parts of the body.""")
 
-        #st.subheader("Cryptocurrency Overview")
+        
     # ---------------------------------------------------- DETECTION PAGE------------------------------------------------------------
 
     elif sBox == "Detection":
@@ -153,7 +148,7 @@ def PageSpecifications(sBox):
             input_shape = input_details[0]['shape']
             image = np.array(image.resize((150,150)), dtype=np.float32) 
             
-            #image = image / 255.0
+            # image = image / 255.0
             image = np.expand_dims(image, axis=0)
             interpreter.set_tensor(input_details[0]['index'], image)
             interpreter.invoke()
@@ -248,6 +243,10 @@ def PageSpecifications(sBox):
     elif sBox == "Recommendation":
         # setting header
         st.subheader("Recommendation")
+        st.write('''With a performance accuracy of  96\%, we recommend the application of the pretrained model for this classification.
+        In order to detect the presence of a tumor and correctly classify it as either glioma, pituitary or meningioma, sample brain MRI
+        images will be uploaded and fed into the model, which will then indicate whether there is a tumor in the brain or not. 
+        If yes, the model will then go ahead and classify the type of tumor. The model will be deployed on streamlit.''')
 
     # ------------------------------------------------------ CONCLUSION PAGE---------------------------------------------------------------
 
