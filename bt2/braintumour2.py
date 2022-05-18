@@ -67,7 +67,7 @@ def PageSpecifications():
             opencv_image = cv2.imdecode(file_bytes, 1)
             opencv_image = cv2.cvtColor(opencv_image, cv2.COLOR_BGR2RGB)  
             image = Image.open(file_uploaded)
-            col1, col2 = st.columns([5, 5])
+            col1, col2 = st.columns([1, 1])
             # st.image(image, caption='Uploaded Image', use_column_width=True, width = 200)
             # class_btn = st.button("Generate Prediction")
             # if class_btn:
