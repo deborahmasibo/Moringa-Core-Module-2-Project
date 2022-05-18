@@ -127,17 +127,17 @@ def PageSpecifications(sBox):
                 '''
             if result == 0:
                 message = '''
-                Abnormal cell growth in the glial cells.''' + recommendation
+                Abnormal cell growth in the glial cells. ''' + recommendation
                 result = f"{pred} Detected" 
             elif result == 1:
                 message = '''
-                Abnormal cell growth in the meninges.''' + recommendation
+                Abnormal cell growth in the meninges. ''' + recommendation
                 result = f"{pred} Detected"
             elif result == 2:
                 result = 'No tumour was detected.'
             elif result == 3:
                 message = '''
-                Abnormal cell growth in the pituitary gland.''' + recommendation
+                Abnormal cell growth in the pituitary gland. ''' + recommendation
                 result = f"{pred} Detected" 
                 
             
