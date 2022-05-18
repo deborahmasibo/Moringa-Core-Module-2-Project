@@ -54,7 +54,7 @@ def PageSpecifications(sBox):
             <style>
             .main {
                 background-color: #6b8829;
-                background-image: url('https://www.pnnl.gov/sites/default/files/styles/hero_1600x1200/public/media/image/humanbrain2-1600x1200_0.jpg?h=08b866d1&itok=I0S7ZsCy');
+                background-image: url('https://w0.peakpx.com/wallpaper/681/41/HD-wallpaper-mind-concept-brain-minimal-digital-art-creative-brains-intellect-mathematics.jpg);
                 }
                 </style>
                 """,
