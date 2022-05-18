@@ -243,16 +243,25 @@ def PageSpecifications(sBox):
     elif sBox == "Recommendation":
         # setting header
         st.subheader("Recommendation")
-        st.write('''With a performance accuracy of  96\%, we recommend the application of the pretrained model for this classification.
-        In order to detect the presence of a tumor and correctly classify it as either glioma, pituitary or meningioma, sample brain MRI
-        images will be uploaded and fed into the model, which will then indicate whether there is a tumor in the brain or not. 
-        If yes, the model will then go ahead and classify the type of tumor. The model will be deployed on streamlit.''')
+        st.write('''The real-world problems require proper addressing in the domain of medical image analysis that has been external to the domain
+        of computer vision. The computational complexity in handling MRI image modalities at a single instance is the major challenge in imaging and
+        pre-processing techniques. During MRI scans for diagnosis correct tuning of parameters and motion applied to images, are areas that can be
+        explored in the future. The time taken for processing and segmenting is considerably high which makes it difficult to process in real-time situations.
+        The classification using transfer learning while proven effective and takes fewer resources to train it has some bias because of the datasets that are
+        used to pre-train the models. This should be addressed in future works to make the system more efficient. The current methods that deal with the noise
+        in the MRI images are also responsible for reducing the features in the MRI images. Therefore models with better Noise removal techniques that do not
+        flatten the images can further increase the model’s accuracy. Techniques like semi-supervised learning can be used to augment the size of the dataset.''')
 
     # ------------------------------------------------------ CONCLUSION PAGE---------------------------------------------------------------
 
     elif sBox == "Conclusion":
         # setting header
         st.subheader("Conclusion")
+        st.write('''
+        The model successfully trains with accuracy with an accuracy of 96\%. In comparison with the other recently published works in which the
+        models are trained from the scratch, our model was built using transfer learning as a base model. This model can be used for preliminary
+        analysis for brain tumor detection before it can be sent to the experts. The model can be furthermore trained or additional data can be
+        used to train to increase the accuracy as it is not close to over fitting.''')
 
     # --------------------------------------------------------TEAM MEMBERS ---------------------------------------------------------------
     elif sBox == "The Team":
