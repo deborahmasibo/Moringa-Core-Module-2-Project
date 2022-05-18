@@ -92,12 +92,18 @@ def PageSpecifications(sBox):
                 # if class_btn:
                 with st.spinner('Model working....'):
                     with col1:  
-                        st.image(opencv_image, channels = 'RGB', width= 200, caption='Uploaded Image')
-                        predictions = predict(image)
+                        st.image(opencv_image, channels = 'RGB', width= 300, caption='Uploaded Image')
+                        predictions, message, recommendation = predict(image)
+                        
                     with col2:
                         time.sleep(1)
                         st.success('Classified')
                         st.markdown("<h5 style='text-align: left; color: black;'> {} </h5>".format(predictions), unsafe_allow_html=True)
+                        st.write(f'Location: {message}')
+                        if len(reccommendation) == 0:
+                            pass
+                        else:
+                            st.write(f'Reccomendation: {recommendation}')
                             
 
         def predict(image):
@@ -119,12 +125,31 @@ def PageSpecifications(sBox):
             result = probabilities.argmax()
             labels = {0: 'Glioma Tumour', 1: 'Meningioma Tumour', 2: 'No Tumour', 3: 'Pituitary Tumour'}
             pred = labels[result]
-            if result == 2:
-                result = 'No tumour was detected.'
-            else:
+            message = ''
+            recommendation = '''Proceed to the neurosurgery department for further consultation.
+                '''
+            if result == 0:
+                message = '''
+                Abnormal cell growth in the glial cells.'''
                 result = f"{pred} Detected" 
+                rec = recommendation
+            elif result == 1:
+                message = '''
+                Abnormal cell growth in the meninges.'''
+                result = f"{pred} Detected"
+                rec = recommendation
+            elif result == 2:
+                result = 'No tumour was detected.'
+                rec = ''
+            elif result == 3:
+                message = '''
+                Abnormal cell growth in the pituitary gland.'''
+                result = f"{pred} Detected" 
+                rec = recommendation
             
-            return result
+            
+            
+            return result, message, rec
         if __name__ == "__main__":
             main()
   
