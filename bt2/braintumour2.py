@@ -53,8 +53,8 @@ def PageSpecifications(sBox):
             """
             <style>
             .main {
-                background-color: #6b8829;
-                background-image: url('https://w0.peakpx.com/wallpaper/681/41/HD-wallpaper-mind-concept-brain-minimal-digital-art-creative-brains-intellect-mathematics.jpg);
+                # background-color: #6b8829;
+                background-image: url('https://images.app.goo.gl/XYghr9RmRrCdLULv8);
                 }
                 </style>
                 """,
