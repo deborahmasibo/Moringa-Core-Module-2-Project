@@ -93,11 +93,11 @@ def PageSpecifications(sBox):
                 # if class_btn:                    
                 with st.spinner('Model working....'):
                         with col1:
-                        predictions = predict(image)
+                            predictions = predict(image)
                         with col2:
-                        time.sleep(1)
-                        st.success('Classified')
-                        st.markdown("<h5 style='text-align: left; color: black;'> {} </h5>".format(predictions), unsafe_allow_html=True)
+                            time.sleep(1)
+                            st.success('Classified')
+                            st.markdown("<h5 style='text-align: left; color: black;'> {} </h5>".format(predictions), unsafe_allow_html=True)
                             
 
         def predict(image):
