@@ -93,17 +93,14 @@ def PageSpecifications(sBox):
                 with st.spinner('Model working....'):
                     with col1:  
                         st.image(opencv_image, channels = 'RGB', width= 300, caption='Uploaded Image')
-                        predictions, message, recommendation = predict(image)
+                        predictions, message = predict(image)
                         
                     with col2:
                         time.sleep(1)
                         st.success('Classified')
                         st.markdown("<h5 style='text-align: left; color: black;'> {} </h5>".format(predictions), unsafe_allow_html=True)
-                        st.write(f'Location: {message}')
-                        if len(reccommendation) == 0:
-                            pass
-                        else:
-                            st.write(f'Reccomendation: {recommendation}')
+                        st.write(message)
+                       
                             
 
         def predict(image):
@@ -130,26 +127,23 @@ def PageSpecifications(sBox):
                 '''
             if result == 0:
                 message = '''
-                Abnormal cell growth in the glial cells.'''
+                Abnormal cell growth in the glial cells.''' + recommendation
                 result = f"{pred} Detected" 
-                rec = recommendation
             elif result == 1:
                 message = '''
-                Abnormal cell growth in the meninges.'''
+                Abnormal cell growth in the meninges.''' + recommendation
                 result = f"{pred} Detected"
-                rec = recommendation
             elif result == 2:
-                result = 'No tumour was detected.'
-                rec = ''
+                result = 'No tumour was detected.
             elif result == 3:
                 message = '''
-                Abnormal cell growth in the pituitary gland.'''
+                Abnormal cell growth in the pituitary gland.''' + recommendation
                 result = f"{pred} Detected" 
-                rec = recommendation
+                
             
             
             
-            return result, message, rec
+            return result, message
         if __name__ == "__main__":
             main()
   
