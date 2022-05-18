@@ -40,13 +40,8 @@ st.markdown("##")
 #----------------------------------------- Sidebar options configuration ----------------------------------------
 
 # Function to configure the Overview page specifications
-def PageSpecifications(sBox):
+def PageSpecifications():
     
-    
-        
-
-        
-
         
     # ---------------------------------------------------- DETECTION PAGE------------------------------------------------------------
 
@@ -127,7 +122,7 @@ def PageSpecifications(sBox):
 
 # ---------------------------------------------------- FUNCTION CALL ---------------------------------------------------------------
 
-PageSpecifications(sBox)
+PageSpecifications()
 
 #------------------------------------------------------------------------------------------------------------------------------------------
 
