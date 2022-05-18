@@ -49,6 +49,16 @@ def PageSpecifications(sBox):
         # Adding spaces between the header and image
         st.write()
         
+        st.markdown(
+            """
+            <style>
+            .main {
+                background-color: #6b8829;
+                background-image: url('https://www.pnnl.gov/sites/default/files/styles/hero_1600x1200/public/media/image/humanbrain2-1600x1200_0.jpg?h=08b866d1&itok=I0S7ZsCy');
+                }
+                </style>
+                """,
+                unsafe_allow_html=True)
 
         # Loading the homepage image
         col1, col2, col3 = st.columns([1.6,5,1])
