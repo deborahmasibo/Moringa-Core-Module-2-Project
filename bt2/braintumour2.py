@@ -134,7 +134,7 @@ def PageSpecifications(sBox):
                 Abnormal cell growth in the meninges.''' + recommendation
                 result = f"{pred} Detected"
             elif result == 2:
-                result = 'No tumour was detected.
+                result = 'No tumour was detected.'
             elif result == 3:
                 message = '''
                 Abnormal cell growth in the pituitary gland.''' + recommendation
