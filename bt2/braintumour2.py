@@ -61,9 +61,8 @@ def PageSpecifications(sBox):
                 #unsafe_allow_html=True)
 
         # Loading the homepage image
-        imagemain = Image.open("./bt2/images/brain.jpg")
-        st.image(imagemain, width = 900)
-        col1, col2, col3 = st.columns([1.6,5,1])
+        
+        col1, col2, col3 = st.columns([1,5,1])
 
         with col1:
             st.write('')
@@ -74,9 +73,8 @@ def PageSpecifications(sBox):
             # st.write("""Gliomas, meningiomas and pituitary tumours are the most common types of brain tumours. This project seeks to 
             # classify detected brain tumours from MRI scans into one of the aforementioned categories.""")
         with col2:
-            imagemain = Image.open("./bt2/images/Brain_scan.png")
-            #st.image(imagemain, caption="MRI Scan", width = 500)
-            #st.markdown("##")
+            imagemain = Image.open("./bt2/images/brain.jpg")
+            st.image(imagemain, width = 800)
 
         with col3:
             st.write(' ')
