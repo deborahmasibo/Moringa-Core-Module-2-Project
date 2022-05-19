@@ -134,6 +134,10 @@ def PageSpecifications():
 
 PageSpecifications()
 
+# Discalimer
+st.markdown("<h5 style='text-align: center; color: red;'> Disclaimer! </h1>", unsafe_allow_html=True)
+st.write('''The application should only be used for educational purporses, and not for self-diagnosis or any other personal use. 
+For real life cases, consult your local medical authority for advice.''')
 #------------------------------------------------------------------------------------------------------------------------------------------
 
     
