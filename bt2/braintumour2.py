@@ -135,6 +135,8 @@ def PageSpecifications():
 PageSpecifications()
 
 # Discalimer
+st.write()
+st.write()
 st.markdown("<h5 style='text-align: center; color: red;'> Disclaimer! </h1>", unsafe_allow_html=True)
 col1, col2, col3 = st.columns([1,1,1])
 with col1:
