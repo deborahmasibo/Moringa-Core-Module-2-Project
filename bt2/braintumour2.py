@@ -137,12 +137,12 @@ PageSpecifications()
 # Discalimer
 st.markdown("<h5 style='text-align: center; color: red;'> Disclaimer! </h1>", unsafe_allow_html=True)
 col1, col2, col3 = st.columns([1,1,1])
-while col1:
+with col1:
             pass
-while col2:
+with col2:
             st.write('''The application should only be used for educational purporses, and not for self-diagnosis or any other personal use. 
             For real life cases, consult your local medical authority for advice.''')
-while col3:
+with col3:
            pass 
 #------------------------------------------------------------------------------------------------------------------------------------------
 
