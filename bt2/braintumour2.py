@@ -104,7 +104,7 @@ def PageSpecifications():
         labels = {0: 'Glioma Tumour', 1: 'Meningioma Tumour', 2: 'No Tumour', 3: 'Pituitary Tumour'}
         pred = labels[result]
         message = ''
-        recommendation = '''Proceed to the neurosurgery department for further consultation.
+        recommendation = '''The patient should proceed to the neurosurgery department for further consultation.
             '''
         if result == 0:
             message = '''
